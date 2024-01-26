@@ -3,3 +3,7 @@ At the beginning of the simulation, the coordinator designates one of the two no
 
 # Demo
 https://github.com/FatemaKotb/Networks-Project/assets/101884853/c412961e-f28e-4b48-b059-7921934d8e7e
+
+# Notes
+- Rename the project to "groupProject" before attempting to run it.
+- Make sure to update the file path of the coordinator.txt, test.txt, and test1.txt text files in the Coordinator.cc and Node.cc files before attempting to run the project.
