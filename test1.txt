@@ -1,0 +1,13 @@
+0000 ssss
+0000 dffd#
+0000 c/ccc
+0100 lost
+0001 delay
+0100 lostA
+0100 lostB
+0100 lostC
+0000 cc
+1000 mod
+0010 dup
+0110 duplost
+1010 dupmod

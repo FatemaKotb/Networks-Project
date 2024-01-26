@@ -1,0 +1,73 @@
+At time [4] , Node[1] , Introducing channel error with code [0000]. and msg = ssss
+At time [4.5], Node[1] [sent] frame with seq_num=[0] and payload= #ssss# and trailer=[00000000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [4.5] , Node[1] , Introducing channel error with code [0000]. and msg = dffd#
+At time [5], Node[1] [sent] frame with seq_num=[1] and payload= #dffd/## and trailer=[11000100] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [5] , Node[1] , Introducing channel error with code [0000]. and msg = c/ccc
+At time [5.5], Node[1] [sent] frame with seq_num=[2] and payload= #c//ccc# and trailer=[11110100] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [5.5], Node[0] [received] frame with seq_num=[0] and payload= #ssss# and trailer=[00000000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[6], Node[0] Sending [ACK] with number[0],  loss [No]
+At time [6], Node[0] [received] frame with seq_num=[1] and payload= #dffd/## and trailer=[11000100] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[6.5], Node[0] Sending [ACK] with number[1],  loss [No]
+At time [6.5], Node[0] [received] frame with seq_num=[2] and payload= #c//ccc# and trailer=[11110100] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[7], Node[0] Sending [ACK] with number[2],  loss [No]
+At time [7] , Node[1] , Introducing channel error with code [0100]. and msg = lost
+At time [7.5], Node[1] [sent] frame with seq_num=[3] and payload= #lost# and trailer=[00100000] and Modified [-1] Lost[Yes], Duplicate[0], Delay[0]
+At time [7.5] , Node[1] , Introducing channel error with code [0001]. and msg = delay
+At time [8], Node[1] [sent] frame with seq_num=[4] and payload= #delay# and trailer=[10101110] and Modified [-1] Lost[No], Duplicate[0], Delay[4]
+At time [8] , Node[1] , Introducing channel error with code [0100]. and msg = lostA
+At time [8.5], Node[1] [sent] frame with seq_num=[5] and payload= #lostA# and trailer=[10100010] and Modified [-1] Lost[Yes], Duplicate[0], Delay[0]
+At time [13], Node[0] [received] frame with seq_num=[4] and payload= #delay# and trailer=[10101110] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[13.5], Node[0] Sending [ACK] with number[4],  loss [No]
+Time out event at time [17.5], at Node[1] for frame with seq_num=[3]
+At time [18], Node[1] [sent] frame with seq_num=[3] and payload= #lost# and trailer=[00100000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+Time out event at time [18.5], at Node[1] for frame with seq_num=[5]
+At time [19], Node[1] [sent] frame with seq_num=[5] and payload= #lostA# and trailer=[10100010] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [19], Node[0] [received] frame with seq_num=[3] and payload= #lost# and trailer=[00100000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[19.5], Node[0] Sending [ACK] with number[3],  loss [No]
+At time [20], Node[0] [received] frame with seq_num=[5] and payload= #lostA# and trailer=[10100010] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[20.5], Node[0] Sending [ACK] with number[5],  loss [No]
+At time [20.5] , Node[1] , Introducing channel error with code [0100]. and msg = lostB
+At time [21], Node[1] [sent] frame with seq_num=[0] and payload= #lostB# and trailer=[01100010] and Modified [-1] Lost[Yes], Duplicate[0], Delay[0]
+At time [21] , Node[1] , Introducing channel error with code [0100]. and msg = lostC
+At time [21.5], Node[1] [sent] frame with seq_num=[1] and payload= #lostC# and trailer=[11100010] and Modified [-1] Lost[Yes], Duplicate[0], Delay[0]
+At time [21.5] , Node[1] , Introducing channel error with code [0000]. and msg = cc
+At time [22], Node[1] [sent] frame with seq_num=[2] and payload= #cc# and trailer=[00000000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [23], Node[0] [received] frame with seq_num=[2] and payload= #cc# and trailer=[00000000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[23.5], Node[0] Sending [ACK] with number[2],  loss [No]
+Time out event at time [31], at Node[1] for frame with seq_num=[0]
+At time [31.5], Node[1] [sent] frame with seq_num=[0] and payload= #lostB# and trailer=[01100010] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+Time out event at time [31.5], at Node[1] for frame with seq_num=[1]
+At time [32], Node[1] [sent] frame with seq_num=[1] and payload= #lostC# and trailer=[11100010] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [32.5], Node[0] [received] frame with seq_num=[0] and payload= #lostB# and trailer=[01100010] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[33], Node[0] Sending [ACK] with number[0],  loss [No]
+At time [33], Node[0] [received] frame with seq_num=[1] and payload= #lostC# and trailer=[11100010] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[33.5], Node[0] Sending [ACK] with number[1],  loss [No]
+At time [34] , Node[1] , Introducing channel error with code [1000]. and msg = mod
+At time [34.5], Node[1] [sent] frame with seq_num=[3] and payload= #mmd# and trailer=[01100110] and Modified [14] Lost[No], Duplicate[0], Delay[0]
+At time [34.5] , Node[1] , Introducing channel error with code [0010]. and msg = dup
+At time [35], Node[1] [sent] frame with seq_num=[4] and payload= #dup# and trailer=[10000110] and Modified [-1] Lost[No], Duplicate[1], Delay[0]
+At time [35.1], Node[1] [sent] frame with seq_num=[4] and payload= #dup# and trailer=[10000110] and Modified [-1] Lost[No], Duplicate[2], Delay[0]
+At time [35] , Node[1] , Introducing channel error with code [0110]. and msg = duplost
+At time [35.5], Node[1] [sent] frame with seq_num=[5] and payload= #duplost# and trailer=[10100110] and Modified [-1] Lost[Yes], Duplicate[1], Delay[0]
+At time [35.6], Node[1] [sent] frame with seq_num=[5] and payload= #duplost# and trailer=[10100110] and Modified [-1] Lost[Yes], Duplicate[2], Delay[0]
+At time [35.5], Node[0] [received] frame with seq_num=[3] and payload= #mmd# and trailer=[01100110] and Modified [1] Lost[No], Duplicate[0], Delay[0]
+At time[36], Node[0] Sending [NACK] with number[3],  loss [No]
+At time [36], Node[0] [received] frame with seq_num=[4] and payload= #dup# and trailer=[10000110] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[36.5], Node[0] Sending [ACK] with number[4],  loss [No]
+At time [36.1], Node[0] [received] frame with seq_num=[4] and payload= #dup# and trailer=[10000110] and Modified [0] Lost[No], Duplicate[1], Delay[0]
+At time [37.5], Node[1] [sent] frame with seq_num=[3] and payload= #mod# and trailer=[01100110] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [38.5], Node[0] [received] frame with seq_num=[3] and payload= #mod# and trailer=[01100110] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[39], Node[0] Sending [ACK] with number[3],  loss [No]
+At time [40] , Node[1] , Introducing channel error with code [1010]. and msg = dupmod
+At time [40.5], Node[1] [sent] frame with seq_num=[0] and payload= #dutmod# and trailer=[11100000] and Modified [21] Lost[No], Duplicate[1], Delay[0]
+At time [40.6], Node[1] [sent] frame with seq_num=[0] and payload= #dutmod# and trailer=[11100000] and Modified [21] Lost[No], Duplicate[2], Delay[0]
+At time [41.5], Node[0] [received] frame with seq_num=[0] and payload= #dutmod# and trailer=[11100000] and Modified [1] Lost[No], Duplicate[0], Delay[0]
+At time[42], Node[0] Sending [NACK] with number[0],  loss [No]
+At time [41.6], Node[0] [received] frame with seq_num=[0] and payload= #dutmod# and trailer=[11100000] and Modified [1] Lost[No], Duplicate[1], Delay[0]
+At time [43.5], Node[1] [sent] frame with seq_num=[0] and payload= #dupmod# and trailer=[11100000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [44.5], Node[0] [received] frame with seq_num=[0] and payload= #dupmod# and trailer=[11100000] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[45], Node[0] Sending [ACK] with number[0],  loss [No]
+Time out event at time [45.5], at Node[1] for frame with seq_num=[5]
+At time [46], Node[1] [sent] frame with seq_num=[5] and payload= #duplost# and trailer=[10100110] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time [47], Node[0] [received] frame with seq_num=[5] and payload= #duplost# and trailer=[10100110] and Modified [-1] Lost[No], Duplicate[0], Delay[0]
+At time[47.5], Node[0] Sending [ACK] with number[5],  loss [No]
